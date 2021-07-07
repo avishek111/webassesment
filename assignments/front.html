@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .body{
+            background-image: url("forest.jpg");
+            background-size: cover;
+            background-repeat: no-repeat; 
+            overflow-x: hidden;
+        }
+        .Forest h1{
+            display: inline-block;
+            color: white;
+            margin-left: 20px;
+            font-size: 40px;
+            
+        }
+        .nav-bar ul{
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .nav-bar ul li{
+            display: inline-block;
+            list-style-type: none;
+        
+        }
+        .nav-bar a{
+            text-decoration: none;
+            margin:20px;
+            color: white;    
+        }
+        a:hover{
+            color: red;
+        }
+        
+        
+        .nav-bar{
+            float: right;
+            
+        }
+        .for{
+            width: 600px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 5px;
+        }
+        .for h1{
+            text-align: center;
+            color: white;
+            font-size: 33px;
+        }
+        .for h2{
+            text-align: center;
+            color: white;
+            font-size: 40px;
+        }
+        .for pre{
+            color: white;
+        }
+        .for button:hover{
+            background-color: black;
+            color: white;
+        }
+        
+        button[type="about"]{
+            border: 2px solid white;
+            border-radius: 50px;
+            width: 120px;
+            height: 50px;
+            margin-left: 130px;
+            cursor: pointer;
+        }
+        button[type="join"]{
+            border: 2px solid white;
+            border-radius: 50px;
+            width: 120px;
+            height: 50px;
+            margin-left: 50px;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+        .for button{
+            transition-duration: 0.4s;
+        }
+        .Forest .nav-bar .id{
+            color: red;
+        }
+        /* //////////////////////// about/////////////////////// */
+        .seco{
+            box-sizing: border-box;
+            position: relative;
+            top: 680px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .seco .content{
+            width: 100%;
+            text-align: center;
+            
+        }
+        .seco .content .head{
+            color: #a3c962;
+            font-weight: 600;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .seco .content .id{
+            font-size: 26px;
+            color: #000;
+            font-weight: 700;
+            margin: 0px;
+        }
+
+        .seco .content .ok{
+            margin-bottom: 50px;
+            font-size: 15px;
+            color: #676662;
+            letter-spacing: 1px
+        }
+
+        .seco .ap img{
+            width: 400px;
+            margin: 30px 0px 0px 185px;
+        }
+        .seco .bp{
+            margin: 30px 0px 0px 80px;
+        }
+        .seco .bp h3{
+            color: #149614;
+            margin: 0px;
+            position: relative;
+            font-size: 22px;
+        }
+        .seco .bp h4{
+            margin: 0px;
+            position: relative;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 500;
+            font-size: 30px;
+        }
+        .seco .bp p{
+            margin: 9px 0px 9px 0px;
+            position: relative;
+            font-size: 18px;
+            opacity: 80%;
+        }
+        .seco .bp img{
+            width: 600px;
+        }
+        /* //////////--------services--------/////////// */
+        .server{
+            background-image: url("lpg.jpg");
+            background-repeat: no-repeat;
+            
+
+        }
+        .server{
+            box-sizing: border-box;
+            position: relative;
+            top: 800px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid white;
+        }
+        .server .server1{
+            margin: 60px 0px 0px 100px;
+        }
+        .server .server1 p{
+            font-size: 20px;
+            color: #d8d8d8;
+        
+        
+        }
+        .server .server1 #serve{
+            padding-left: 205px;
+        }
+        .server .server2 h4{
+            font-size: 25px;
+            color: white;
+            margin: 70px 0px 10px 0px;
+
+        }
+        .server .server2{
+            margin-left: 35px;
+            width: 650px;
+        }
+        .server .server2 h5{
+            font-size: 45px;
+            color: white;
+            margin: 0px;
+        }
+        .server .box{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .server .box .first{
+            position: relative;
+            background: rgb(255, 255, 255);
+            box-shadow: -1px 0px 1px black;
+            width: 320px;
+            margin: 60px 0px 0px 100px;
+            text-align: center;
+        }
+
+        .server .box .first i{
+            margin: 20px 0px 0px 0px;
+        }
+        .server .box .first h4{
+            font-size: 30px;
+            font-weight: 700;
+            color: #a3c962;
+            margin: 15px 0px 15px 0px;
+        }
+        .server .box .first p{
+            font-size: 14px;
+            color: #4c4c4c;
+            line-height: 28px;
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+            letter-spacing: 1px;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0px 30px 30px 30px;
+        }
+        .server .box .second{
+            position: relative;
+            background: rgb(255, 255, 255);
+            box-shadow: -1px 0px 1px black;
+            width: 320px;
+            margin: 60px 0px 0px 100px;
+            text-align: center;
+        }
+        .server .box .second h4{
+            font-size: 30px;
+            font-weight: 700;
+            color: #a3c962;
+            margin: 15px 0px 15px 0px;
+        }
+        .server .box .second p{
+            font-size: 14px;
+            color: #4c4c4c;
+            line-height: 28px;
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+            letter-spacing: 1px;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0px 30px 30px 30px;
+        }
+
+        .server .box .third{
+            position: relative;
+            background: rgb(255, 255, 255);
+            box-shadow: -1px 0px 1px black;
+            width: 320px;
+            margin: 60px 0px 0px 100px;
+            text-align: center;
+        }
+        .server .box .third h4{
+            font-size: 30px;
+            font-weight: 700;
+            color: #a3c962;
+            margin: 15px 0px 15px 0px;
+        }
+        .server .box .third p{
+            font-size: 14px;
+            color: #4c4c4c;
+            line-height: 28px;
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+            letter-spacing: 1px;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0px 30px 30px 30px;
+        }
+        .server .box .fourth{
+            position: relative;
+            background: rgb(255, 255, 255);
+            box-shadow: -1px 0px 1px black;
+            width: 320px;
+            margin: 60px 0px 30px 100px;
+            text-align: center;
+        }
+        .server .box .fourth h4{
+            font-size: 30px;
+            font-weight: 700;
+            color: #a3c962;
+            margin: 15px 0px 15px 0px;
+        }
+        .server .box .fourth p{
+            font-size: 14px;
+            color: #4c4c4c;
+            line-height: 28px;
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+            letter-spacing: 1px;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0px 30px 30px 30px;
+        }
+        .server .box .fifth{
+            position: relative;
+            background: rgb(255, 255, 255);
+            box-shadow: -1px 0px 1px black;
+            width: 320px;
+            margin: 60px 0px 30px 100px;
+            text-align: center;
+        }
+        .server .box .fifth h4{
+            font-size: 30px;
+            font-weight: 700;
+            color: #a3c962;
+            margin: 15px 0px 15px 0px;
+        }
+        .server .box .fifth p{
+            font-size: 14px;
+            color: #4c4c4c;
+            line-height: 28px;
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+            letter-spacing: 1px;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0px 30px 30px 30px;
+        }
+        .server .box .six{
+            position: relative;
+            background: rgb(255, 255, 255);
+            box-shadow: -1px 0px 1px black;
+            width: 320px;
+            margin: 60px 0px 30px 100px;
+            text-align: center;
+        }
+        .server .box .six h4{
+            font-size: 30px;
+            font-weight: 700;
+            color: #a3c962;
+            margin: 15px 0px 15px 0px;
+        }
+        .server .box .six p{
+            font-size: 14px;
+            color: #4c4c4c;
+            line-height: 28px;
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+            letter-spacing: 1px;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0px 30px 30px 30px;
+        }
+        .server .box .second i{
+            margin: 20px 0px 0px 0px;
+        }
+        .server .box .third i{
+            margin: 20px 0px 0px 0px;
+        }
+        .server .box .fourth i{
+            margin: 20px 0px 0px 0px;
+        }
+        .server .box .fifth i{
+            margin: 20px 0px 0px 0px;
+        }
+        .server .box .six i{
+            margin: 20px 0px 0px 0px;
+        }
+
+/* -------------------------------------gallery----------------------------------------- */
+   
+.gallery {
+        margin: 0px;
+        position: absolute;
+        top: 2500px;
+        }
+        .gallery h3 {
+        position: relative;
+        left: 150%;
+        color: green;
+        font-size: 20px;
+        }
+        .gallery h4 {
+        position: relative;
+        left: 122%;
+        font-weight: lighter;
+        font-size: 49px;
+        margin-top: -14px;
+        }
+        .gallery p {
+        position: relative;
+        left: 185%;
+        margin-top: -140px;
+        line-height: 1.5;
+        font-size: 18px;
+        opacity: 70%;
+        }
+        .image2 img {
+        position: absolute;
+        margin-top: 50px;
+        left: 40%;
+        width: 550px;
+        }
+        .image3 img {
+        position: absolute;
+        margin-top: 50px;
+        left: 180%;
+        width: 260px;
+        }
+        .image4 img {
+        position: absolute;
+        margin-top: 50px;
+        left: 242%;
+        width: 260px;
+        }
+        .image5 img {
+        position: absolute;
+        margin-top: 480px;
+        left: 40%;
+        width: 280px;
+        }
+        .image6 img {
+        position: absolute;
+        margin-top: 473px;
+        left: 115%;
+        width: 280px;
+        }
+        .image7 img {
+        position: absolute;
+        margin-top: 403px;
+        left: 180%;
+        width: 260px;
+        }
+        .image8 img {
+        position: absolute;
+        margin-top: 403px;
+        left: 241%;
+        width: 280px;
+        height: 27vh;
+        }
+        .image9 img {
+        position: absolute;
+        margin-top: 705px;
+        left: 40%;
+        width: 565px;
+        }
+        .image10 img {
+        position: absolute;
+        margin-top: 610px;
+        left: 179%;
+        width: 565px;
+        }
+
+        
+        
+
+
+    
+        
+        
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="Forest">
+        <h1>Forest</h1>
+        <nav class="nav-bar">
+            
+            <ul>
+                <li><a class="id" href="front.html" >Home</a></li>
+                <li><a href="#rt">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="for">
+        <h1>Global Warming</h1>
+        <h2>Save Forest And Save Earth</h2>
+        <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. A iusto modi aperiam aliquam? 
+                        consectetur magnam maxime suscipit excepturi autem culp
+                    </pre>
+        <button type="about">About Us</button>
+        <button type="join">Join Us</button>
+
+    </div>
+    <!-- about -->
+    <div class="seco">
+        <div class="content" id="rt">
+            <p class="head">What we do</p>
+            <p class="id">STANDING TOGETHER FOR A BETTER WORLD</p><br>
+            <p class="ok">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit<br />
+            Lorem ipsum dolor sit amet, consectetur 
+            </p>
+        </div>
+        <div class="ap">
+            <img src="../assignments/lif.jpg" />
+        </div>
+        <div class="bp">
+            <h3>About Us</h3>
+            <h4>
+              we cannot afford to fail in our mission to<br/>
+              save a living planet
+            </h4>
+            <p>
+              delectus reiciendis maiores alias consequatur aut.maiores alias Lorem
+            </p>
+            <p>ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod</p>
+            <p>
+              delectus reiciendis maiores alias consequatur aut.maiores alias Lorem<br>
+            </p>
+            <p>ipsum dolor sit amet, consectetur</p>
+            <img src="../assignments/per.PNG" alt="">
+        </div> 
+    </div>
+    <!-- /////////////----services-----//////////////// -->
+    <div class="server">
+        <div class="server1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+            <p id="serve">eiusmod tempor incididunt ut labore</p>
+        </div>
+        <div class="server2">
+            <h4>What we provide</h4>
+            <h5>Our Services</h5>
+        </div>
+        <div class="box">
+            <div class="first">
+                <i class="fa fa-pagelines" style="font-size: 50px;"></i>
+                <div>
+                <h4>Planting</h4>
+                <p>Lorem ipsum dolor sit amet,
+                 consectetuer adipiscing elit</p>
+                </div>
+            </div>
+            <div class="second">
+                <i class="fa fa-paw" style="font-size: 50px;"></i>
+                <div>
+                <h4>Wild Life</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                </div>
+
+            </div>
+            <div class="third">
+                <i class="fa fa-tree" style="font-size: 50px;"></i>
+                <div>
+                <h4>Save Plants</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                </div>
+
+            </div>
+            <div class="fourth">
+                <i class="fa fa-tint" style="font-size: 50px;"></i>
+                <div>
+                <h4>Watering</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                </div>
+
+            </div>
+            <div class="fifth">
+                <i class="fa fa-envira" style="font-size: 50px;"></i>
+                <div>
+                <h4>Save Trees</h4>
+                <p>Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit</p>
+                </div>
+
+            </div>
+            <div class="six">
+                <i class="fa fa-snowflake-o" style="font-size: 50px;"></i>
+                <div>
+                <h4>Eco Climate</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="gallery">
+        <h3>See our work</h3>
+        <h4>Our Gallery</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br />eiusmod
+            tempor incididunt ut labore
+        </p>
+        <div class="image2">
+          <img src="/assignments/butterfly.jpg" alt="butterfly" />
+        </div>
+        <div class="image3">
+          <img src="/assignments/hai.jpg" alt="girl" />
+        </div>
+        <div class="image4">
+          <img src="/assignments/hair.jpg" alt="photo" />
+        </div>
+        <div class="image5">
+          <img src="/assignments/man.jpg" alt="photo" />
+        </div>
+        <div class="image6">
+          <img src="/assignments/pot.jpg" alt="photo" />
+        </div>
+        <div class="image7">
+          <img src="/assignments/hai.jpg" alt="photo" />
+        </div>
+        <div class="image8">
+          <img src="/assignments/hand.jpg" alt="hand" />
+        </div>
+        <div class="image9">
+          <img src="/assignments/hus.jpg" alt="forest" />
+        </div>
+        <div class="image10">
+          <img src="/assignments/red.jpg" alt="" />
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>
